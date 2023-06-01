@@ -4,10 +4,12 @@ import Events from '../events/Events';
 import Reviews from '../reviews/Reviews';
 import Doctors from '../doctors/Doctors';
 import ContactForm from '../contactForm/ContactForm';
+import Header from '../../../shared/header/Header';
 
 const Home = () => {
     return (
         <div>
+            <Header></Header>
             <Services></Services>
             <Events></Events>
             <Reviews></Reviews>

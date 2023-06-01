@@ -2,6 +2,7 @@ import { FaLocationArrow, FaCalendar, FaDollarSign } from "react-icons/fa";
 import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const DoctorCard = () => {
     const [rating, setRating] = useState(5)
@@ -14,7 +15,7 @@ const DoctorCard = () => {
                 <h2 className='text-xl font-semibold'>Karyen Anderson</h2>
                 <p className='text-gray-600'>BTP - Senior Physiotherapist</p>
                 <div>
-                    <Rating style={{maxWidth: 110}} value={rating} onChange={setRating}></Rating>
+                    <Rating style={{ maxWidth: 110 }} value={rating} onChange={setRating}></Rating>
                 </div>
             </div>
             <div className='lg:space-y-2 py-2'>
@@ -23,7 +24,7 @@ const DoctorCard = () => {
                 <p className='text-gray-600 flex items-center gap-2 text-sm'> <span><FaDollarSign></FaDollarSign></span> $150</p>
             </div>
             <div>
-                <button className='btn-sm btn-outline w-full border-orange-400 border rounded-md'>View Profile</button>
+                <Link to="/details"><button className='btn-sm btn-outline w-full border-orange-400 border rounded-md'>View Profile</button></Link>
             </div>
         </div>
     );
