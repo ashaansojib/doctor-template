@@ -23,8 +23,7 @@ const Nav = () => {
                 <ul className="menu menu-horizontal px-1">
                     {navBar }
                 </ul>
-                
-                <a className="btn">Get started</a>
+                <Link to="/login"><button className='btn btn-outline'>Login</button></Link>
             </div>
         </nav>
     );
